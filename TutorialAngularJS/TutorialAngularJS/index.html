@@ -8,6 +8,9 @@
     <script src="Scripts/hola_controller.js"></script>
 </head>
 <body ng-controller="FirstController">
-    {{"Hola " + nombre}}
+    Escribe tú nombre: <input type="text" ng-model="nombre" />
+    <br />
+    <br />    
+    {{ "Hola " + nombre }}
 </body>
 </html>
