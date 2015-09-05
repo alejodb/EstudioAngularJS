@@ -2,15 +2,28 @@
 <html ng-app="MiPrimeraApp">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hola mundo con Angular</title>
+    <title>Mi primera página con Angular JS</title>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-    <script src="Scripts/hola_controller.js"></script>
+    <script src="Scripts/primer_controller.js"></script>
 </head>
 <body ng-controller="FirstController">
-    Escribe tú nombre: <input type="text" ng-model="nombre" />
+    Escribe tú comentario:
     <br />
-    <br />    
-    {{ "Hola " + nombre }}
+    <input type="text" ng-model="nuevoComentario.comentario" />
+    <br />
+    <br />
+    Escribe tú nombre: 
+    <br />
+    <input type="text" ng-model="nuevoComentario.nombre" />
+    <br />
+    <br />
+    <button ng-click="agregarComentario()">Agregar comentario</button>
+    <h3>Comentarios</h3>
+    <ul>
+        <li ng-repeat="comentario in comentarios">
+            {{comentario.comentario}} - <strong>{{comentario.nombre}}</strong>
+        </li>
+    </ul>
 </body>
 </html>
