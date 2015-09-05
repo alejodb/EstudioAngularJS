@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="MiPrimeraApp">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hola mundo con Angular</title>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="Scripts/hola_controller.js"></script>
 </head>
-<body>
-    {{"Hola"+" Mundo"}}
+<body ng-controller="FirstController">
+    {{"Hola " + nombre}}
 </body>
 </html>
