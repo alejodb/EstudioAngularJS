@@ -1,7 +1,9 @@
 ﻿var app = angular.module("MiPrimeraApp", []);
 app.controller("FirstController", ["$scope", function (miScope) {
     miScope.nuevoComentario = {};
-    miScope.nombre = "Alejo"
+
+    miScope.nombre = "Alejo";
+    
     miScope.comentarios = [
         {
             comentario: "Buen tutorial",
@@ -12,6 +14,7 @@ app.controller("FirstController", ["$scope", function (miScope) {
             nombre: "Pablito"
         }
     ];
+
     miScope.agregarComentario = function () {
         miScope.comentarios.push(miScope.nuevoComentario);
         miScope.nuevoComentario = {};
