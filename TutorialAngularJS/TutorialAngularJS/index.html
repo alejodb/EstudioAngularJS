@@ -36,5 +36,30 @@
             {{comentario.comentario}} - <strong>{{comentario.nombre}}</strong>
         </li>
     </ul>
+    <br />
+    <br />
+    <hr />
+    <h1>Parte 3</h1>
+    <ul>
+        <li ng-repeat="estudiante in estudiantes">
+            {{estudiante.Nombres}} {{estudiante.Apellidos}} - <strong>{{estudiante.FechaVinculacion}}</strong>
+        </li>
+    </ul>
+    <hr />
+    <h1>Parte 4</h1>
+    Nombres: 
+    <br />
+    <input type="text" ng-model="nuevoEstudiante.nombres" />
+    <br />
+    Apellidos: 
+    <br />
+    <input type="text" ng-model="nuevoEstudiante.apellidos" />
+    <br />
+    Fecha vinculación: 
+    <br />
+    <input type="text" ng-model="nuevoEstudiante.fechaVinculacion" />
+    <br />
+    <br />
+    <button ng-click="agregarEstudiante()">Agregar estudiante</button>
 </body>
 </html>
