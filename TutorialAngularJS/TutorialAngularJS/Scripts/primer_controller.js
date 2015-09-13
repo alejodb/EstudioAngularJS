@@ -45,8 +45,6 @@ app.controller("FirstController", ["$scope", "$http", function (miScope, miHttp)
                 console.log(config);
 
                 miScope.estudiantes.push(data);
-                // Tambien puede ser esta opción
-                //miScope.estudiantes.push(data);
 
                 miScope.nuevoEstudiante = {};
             })
