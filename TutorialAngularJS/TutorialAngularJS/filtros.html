@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="ModuloProbarFiltros">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Prueba de filtros</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/filtros_controller.js"></script>
+</head>
+<body ng-controller="FiltrosController">
+    Mi filtro: {{mihtml | miFiltroQuitarHtml}}
+    <br />
+    Objeto JSON: {{objetoprueba | json}}
+    <br />
+    Formato moneda: {{valor | currency}}
+    <br />
+    Formato moneda con otro símbolo: {{valor | currency:'@'}}
+</body>
+</html>

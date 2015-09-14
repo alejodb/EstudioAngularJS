@@ -110,6 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="filtros.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular-local-storage.js" />
@@ -118,6 +119,7 @@
     <None Include="Scripts\angular.intellisense.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\primer_controller.js" />
     <Content Include="Scripts\todolist_controller.js" />
     <None Include="Scripts\_references.js" />
