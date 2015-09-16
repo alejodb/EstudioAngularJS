@@ -6,6 +6,19 @@
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="Scripts/primer_controller.js"></script>
+    <style>
+        .animated {
+            opacity: 1;
+            max-height: inherit;
+            overflow: hidden;
+            transition: all 2s;
+        }
+        .animated.ng-hide {
+            opacity: 0;
+            max-height: 0px !important;
+            display: block !important;
+        }
+    </style>
 </head>
 <body ng-controller="FirstController">
     <h1>Parte 1</h1>
@@ -29,9 +42,10 @@
     <input type="text" ng-model="nuevoComentario.nombre" />
     <br />
     <br />
-    <button ng-click="agregarComentario()">Agregar comentario</button>
+    <button ng-click="agregarComentario()">Agregar comentario</button>    
     <h3>Comentarios</h3>
-    <ul>
+    <div ng-hide="comentarios.length >= 1">Cargando...</div>
+    <ul ng-show="comentarios.length >= 1">
         <li ng-repeat="comentario in comentarios">
             {{comentario.comentario}} - <strong>{{comentario.nombre}}</strong>
         </li>
@@ -39,13 +53,17 @@
     <br />
     <br />
     <hr />
-    <h1>Parte 3</h1>
-    <ul>
-        <li ng-repeat="estudiante in estudiantes">
-            {{estudiante.Nombres}} {{estudiante.Apellidos}} - <strong>{{estudiante.FechaVinculacion}}</strong>
-        </li>
-    </ul>
-    <hr />
+    <div ng-show="cargando">Cargando...</div>
+    <div ng-show="!cargando && estudiantes.length <= 0">No se encontraron resultados</div>
+    <div ng-hide="estudiantes.length < 1" class="animated">
+        <h1>Parte 3</h1>
+        <ul>
+            <li ng-repeat="estudiante in estudiantes">
+                {{estudiante.Nombres}} {{estudiante.Apellidos}} - <strong>{{estudiante.FechaVinculacion}}</strong>
+            </li>
+        </ul>
+        <hr />
+    </div>
     <h1>Parte 4</h1>
     Nombres: 
     <br />

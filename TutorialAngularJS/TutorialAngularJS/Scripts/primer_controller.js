@@ -20,6 +20,8 @@ app.controller("FirstController", ["$scope", "$http", function (miScope, miHttp)
         miScope.nuevoComentario = {};
     }
 
+    miScope.cargando = true;
+
     miScope.estudiantes = [];
     miScope.nuevoEstudiante = {};
 
@@ -28,9 +30,11 @@ app.controller("FirstController", ["$scope", "$http", function (miScope, miHttp)
             .success(function (data) {
                 console.log(data);
                 miScope.estudiantes = data;
+                miScope.cargando = false;
             })
             .error(function (err) {
                 console.log(err);
+                miScope.cargando = false;
             });
     }
 

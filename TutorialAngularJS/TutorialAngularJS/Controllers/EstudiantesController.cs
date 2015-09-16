@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using MiCapaNegocio;
 using MiCapaNegocio.DAL;
+using System.Threading;
 
 namespace TutorialAngularJS.Controllers
 {
@@ -20,6 +21,7 @@ namespace TutorialAngularJS.Controllers
         // GET: api/Estudiantes
         public IQueryable<Estudiante> GetEstudiantes()
         {
+            Thread.Sleep(1000);
             return db.Estudiantes;
         }
 
