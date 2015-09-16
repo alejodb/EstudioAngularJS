@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="mainModule">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Ejemplo apply digest watch</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script>
+        angular.module("mainModule", [])
+            .controller("FirstController", function ($scope) {
+                $scope.nombre = "Alejo";
+                setTimeout(function () {
+                    console.log($scope.nombre);
+                    // Para que la vista se actualice, aunque no es la forma adecuada
+                    //$scope.nombre = "Nini";
+                    //console.log($scope.nombre);
+                    //$scope.$digest();
+                    // Esta forma si es correcta, porque angular si estaria entereado y controlando todo
+                    $scope.$apply(function () {
+                        $scope.nombre = "Nini";
+                        console.log($scope.nombre);
+                    });
+                }, 2000);
+                document.querySelector("#miboton").addEventListener("click", function () {
+                    $scope.$apply(function () {
+                        $scope.nombre = "Pepito";
+                        console.log($scope.nombre);
+                    });
+                });
+            });
+    </script>
+</head>
+<body ng-controller="FirstController">
+    <h1>{{nombre}}</h1>
+    <button id="miboton">Haz click</button>
+</body>
+</html>

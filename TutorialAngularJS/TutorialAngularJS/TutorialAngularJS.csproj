@@ -113,6 +113,7 @@
     <Content Include="filtros.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="pruebaapplydigestwatch.html" />
     <Content Include="Scripts\angular-local-storage.js" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
