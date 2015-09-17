@@ -114,6 +114,7 @@
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="pruebaapplydigestwatch.html" />
+    <Content Include="pruebarootscope.html" />
     <Content Include="Scripts\angular-local-storage.js" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -122,6 +123,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\primer_controller.js" />
+    <Content Include="Scripts\pruebarootscope_controller.js" />
     <Content Include="Scripts\todolist_controller.js" />
     <None Include="Scripts\_references.js" />
     <Content Include="todolist.html" />

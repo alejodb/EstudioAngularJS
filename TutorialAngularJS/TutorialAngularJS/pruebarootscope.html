@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="ModuloProbarRootScope">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Prueba rootScope</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/pruebarootscope_controller.js"></script>
+</head>
+<body>
+    <div ng-controller="RootScopeController">
+        {{nombre}}
+        <p><strong>Valor del padre: </strong>{{$parent.nombre}}</p>
+        <div ng-controller="ChildController">
+            <p><strong>Valor del hijo: </strong>{{nombre}}</p>
+            <p><strong>Valor del padre del padre: </strong>{{$parent.$parent.nombre}}</p>
+            <input type="text" ng-model="$parent.nombre" />
+            <!-- Al actualizar este se ignoraria el del padre -->
+            <input type="text" ng-model="nombre" />
+        </div>
+    </div>
+    <hr/>
+    <div ng-controller="RootScopeController">
+        {{nombre}}
+        <p><strong>Valor del padre: </strong>{{$parent.nombre}}</p>
+    </div>
+    <hr />
+    <div ng-controller="ChildController">
+        {{nombre}}
+        <p><strong>Valor del padre: </strong>{{$parent.nombre}}</p>
+    </div>
+</body>
+</html>
