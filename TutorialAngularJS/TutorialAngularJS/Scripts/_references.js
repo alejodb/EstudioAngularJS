@@ -7,4 +7,5 @@
 /// <reference path="primer_controller.js" />
 /// <reference path="pruebarootscope_controller.js" />
 /// <reference path="services_controller.js" />
+/// <reference path="src_cloak.js" />
 /// <reference path="todolist_controller.js" />
