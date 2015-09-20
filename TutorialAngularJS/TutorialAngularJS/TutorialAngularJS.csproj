@@ -126,8 +126,10 @@
     <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\primer_controller.js" />
     <Content Include="Scripts\pruebarootscope_controller.js" />
+    <Content Include="Scripts\services_controller.js" />
     <Content Include="Scripts\todolist_controller.js" />
     <None Include="Scripts\_references.js" />
+    <Content Include="services.html" />
     <Content Include="todolist.html" />
     <Content Include="Web.config" />
   </ItemGroup>
