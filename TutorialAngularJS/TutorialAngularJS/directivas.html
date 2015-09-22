@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="CustomDirective">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Directivas</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/directivas.js"></script>
+    <style>
+        .circular {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body ng-controller="AppCtrl">
+    <ul ng-cloak>
+        <!--PARA QUE ESTA SECCION NO SE VEA HASTA QUE NO SE HAYA RESULTO TODO EL CONTENIDO DE ANGULAR -->
+        <li ng-repeat="repo in repos">
+            <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+            <h1>{{repo.name}}</h1>
+        </li>
+    </ul>
+</body>
+</html>

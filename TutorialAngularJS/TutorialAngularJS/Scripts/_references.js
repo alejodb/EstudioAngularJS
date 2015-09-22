@@ -2,6 +2,7 @@
 /// <reference path="angular.js" />
 /// <reference path="angular-local-storage.js" />
 /// <reference path="angular-mocks.js" />
+/// <reference path="directivas.js" />
 /// <reference path="factories_controller.js" />
 /// <reference path="filtros_controller.js" />
 /// <reference path="primer_controller.js" />

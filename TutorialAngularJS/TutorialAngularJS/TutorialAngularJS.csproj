@@ -110,6 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="directivas.html" />
     <Content Include="eventsyclass.html" />
     <Content Include="factories.html" />
     <Content Include="filtros.html" />
@@ -123,6 +124,7 @@
     <None Include="Scripts\angular.intellisense.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\directivas.js" />
     <Content Include="Scripts\factories_controller.js" />
     <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\primer_controller.js" />
