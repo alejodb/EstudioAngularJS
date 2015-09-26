@@ -119,6 +119,8 @@
     <Content Include="pruebaapplydigestwatch.html" />
     <Content Include="pruebarootscope.html" />
     <Content Include="route\index.html" />
+    <Content Include="route\templates\home.html" />
+    <Content Include="route\templates\repositorio.html" />
     <Content Include="Scripts\angular-local-storage.js" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -129,7 +131,7 @@
     <Content Include="Scripts\autocomplete-jquery-ui.js" />
     <Content Include="Scripts\autocomplete-jquery-ui.structure.css" />
     <Content Include="Scripts\directivas.js" />
-    <Content Include="Scripts\ejemplo_route.js" />
+    <Content Include="route\app.js" />
     <Content Include="Scripts\factories_controller.js" />
     <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -139,6 +141,8 @@
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\primer_controller.js" />
     <Content Include="Scripts\pruebarootscope_controller.js" />
+    <Content Include="route\controllers.js" />
+    <Content Include="route\directives.js" />
     <Content Include="Scripts\services_controller.js" />
     <Content Include="Scripts\src_cloak.js" />
     <Content Include="Scripts\todolist_controller.js" />
@@ -172,6 +176,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\route\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MiCapaNegocio\MiCapaNegocio.csproj">

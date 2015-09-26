@@ -1,0 +1,10 @@
+﻿<input type="text" my-autocomplete="listaAutocompletar" placeholder="Buscar repositorio" />
+<ul class="no-list" ng-cloak>
+    <!--PARA QUE ESTA SECCION NO SE VEA HASTA QUE NO SE HAYA RESULTO TODO EL CONTENIDO DE ANGULAR -->
+    <li ng-repeat="repo in repositorios" ng-hide="repositorioSeleccionado && repositorioSeleccionado != repo.name">
+        <a href="#/repositorio/{{repo.name}}">
+            <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+            <h1>{{repo.name}}</h1>
+        </a>
+    </li>
+</ul>

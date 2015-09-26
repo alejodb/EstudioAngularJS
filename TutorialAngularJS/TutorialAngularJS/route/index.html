@@ -6,9 +6,12 @@
     <title>Directivas</title>
     <meta charset="utf-8" />
     <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
     <script src="../Scripts/jquery-2.1.4.js"></script>
     <script src="../Scripts/autocomplete-jquery-ui.js"></script>
-    <script src="../Scripts/ejemplo_route.js"></script>
+    <script src="app.js"></script>
+    <script src="directives.js"></script>
+    <script src="controllers.js"></script>
     <style>
         .ui-autocomplete {
             position: absolute;
@@ -80,14 +83,7 @@
     <script type="text/javascript">
     </script>
 </head>
-<body ng-controller="AppCtrl">
-    <input type="text" my-autocomplete="listaAutocompletar" placeholder="Buscar repositorio" />
-    <ul class="no-list" ng-cloak>
-        <!--PARA QUE ESTA SECCION NO SE VEA HASTA QUE NO SE HAYA RESULTO TODO EL CONTENIDO DE ANGULAR -->
-        <li ng-repeat="repo in repositorios" ng-hide="repositorioSeleccionado && repositorioSeleccionado != repo.name">
-            <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
-            <h1>{{repo.name}}</h1>
-        </li>
-    </ul>
+<body>
+    <div ng-view></div>
 </body>
 </html>
