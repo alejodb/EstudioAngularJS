@@ -43,9 +43,7 @@
     return todoService;
 })
 .controller("TodoListController", function ($scope, TodoService) {
-
     $scope.nuevaActividad = {};
-
     $scope.todo = TodoService.consultarTodas();
 
     $scope.adicionarActividad = function () {

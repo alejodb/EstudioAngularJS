@@ -118,17 +118,22 @@
     <Content Include="index.html" />
     <Content Include="pruebaapplydigestwatch.html" />
     <Content Include="pruebarootscope.html" />
+    <Content Include="route\index.html" />
     <Content Include="Scripts\angular-local-storage.js" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
-    <None Include="Scripts\angular.intellisense.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\autocomplete-jquery-ui.js" />
     <Content Include="Scripts\autocomplete-jquery-ui.structure.css" />
     <Content Include="Scripts\directivas.js" />
+    <Content Include="Scripts\ejemplo_route.js" />
     <Content Include="Scripts\factories_controller.js" />
     <Content Include="Scripts\filtros_controller.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -157,7 +162,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Scripts\angular.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
