@@ -114,6 +114,16 @@
     <Content Include="eventsyclass.html" />
     <Content Include="factories.html" />
     <Content Include="filtros.html" />
+    <Content Include="final\app.js" />
+    <Content Include="final\controllers.js" />
+    <Content Include="final\css\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="final\css\main.css" />
+    <Content Include="final\index.html" />
+    <Content Include="final\css\lumx.css" />
+    <Content Include="final\templates\home.html" />
+    <Content Include="Scripts\lumx.js" />
+    <Content Include="Scripts\lumx.min.js" />
+    <Content Include="final\services.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="pruebaapplydigestwatch.html" />
@@ -136,6 +146,10 @@
     <Content Include="Scripts\filtros_controller.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="final\css\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="final\css\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="final\css\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="final\css\fonts\materialdesignicons-webfont.woff2" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
