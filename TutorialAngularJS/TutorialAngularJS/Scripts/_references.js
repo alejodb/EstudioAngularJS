@@ -8,6 +8,7 @@
 /// <reference path="angular.min.js" />
 /// <reference path="angular-local-storage.js" />
 /// <reference path="angular-mocks.js" />
+/// <reference path="angular-resource.min.js" />
 /// <reference path="angular-route.min.js" />
 /// <reference path="autocomplete-jquery-ui.js" />
 /// <reference path="directivas.js" />

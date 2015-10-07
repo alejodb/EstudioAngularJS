@@ -1,4 +1,4 @@
-﻿angular.module("EjercicioFinal", ["lumx", "ngRoute"])
+﻿angular.module("EjercicioFinal", ["lumx", "ngRoute", "ngResource"])
 .config(function ($routeProvider) {
     $routeProvider
         .when("/", {

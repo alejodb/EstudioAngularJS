@@ -1,12 +1,43 @@
 ﻿<lx-tabs>
-    <lx-tab heading="Posts">
+    <lx-tab heading="Estudiantes">
         <div class="p+">
-            Hola mundo Posts
+            <div class="card top-space" ng-repeat="estudiante in estudiantes">
+                 <div class="p+">
+                     <strong class="fs-headline display-block tc-red-900">
+                         {{estudiante.ID}}
+                     </strong>
+                     <div class="paragraph fs-body-1 mt+">
+                         {{estudiante.Nombres}} {{estudiante.Apellidos}}
+                     </div>
+                     <div class="card__actions">
+                         <a href="#">Leer más</a>
+                     </div>
+                 </div>
+            </div>
         </div>
     </lx-tab>
     <lx-tab heading="Users">
         <div class="p+">
-            Hola mundo Users
+            <div class="card top-space" ng-repeat="user in users">
+                <div flex-container="row">
+                    <div class="card__img--left" style="height: 160px;">
+                        <img src="css/bart-nadando-900756.jpeg" />
+                    </div>
+                    <div flex-item flex-container="column">
+                        <div flex-item>
+                            <strong class="fs-headline display-block">
+                                {{user.name}}
+                            </strong>
+                            <strong  class="fs-subhead tc-black-2 display-block">
+                                {{user.email}}
+                            </strong>
+                        </div>
+                        <div class="card__actions">
+                            <a href="#">Ver usuario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </lx-tab>
 </lx-tabs>
