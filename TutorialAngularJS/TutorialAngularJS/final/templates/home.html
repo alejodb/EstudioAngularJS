@@ -10,7 +10,9 @@
                          {{estudiante.Nombres}} {{estudiante.Apellidos}}
                      </div>
                      <div class="card__actions">
-                         <a href="#">Leer más</a>
+                         <a href="#/estudiantes/consulta/{{estudiante.ID}}" class="btn btn--m btn--blue btn--flat" lx-ripple>Leer más</a>
+                         <a href="#/estudiantes/edicion/{{estudiante.ID}}" class="btn btn--m btn--orange btn--flat" lx-ripple>Editar</a>
+                         <a ng-click="eliminarEstudiante(estudiante)" class="btn btn--m btn--red btn--flat" lx-ripple>Eliminar</a>
                      </div>
                  </div>
             </div>

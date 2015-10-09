@@ -121,6 +121,8 @@
     <Content Include="final\css\main.css" />
     <Content Include="final\index.html" />
     <Content Include="final\css\lumx.css" />
+    <Content Include="final\templates\estudiante.html" />
+    <Content Include="final\templates\estudiante_form.html" />
     <Content Include="final\templates\home.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
