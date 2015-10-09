@@ -19,7 +19,7 @@
     $scope.estudiante = servicioEstudiantes.get({ id: $routeParams.id });
 
     $scope.guardarEstudiante = function () {
-        servicioEstudiantes.update({ id: $scope.estudiante.id }, { estudiante: $scope.estudiante }, function (data) {
+        servicioEstudiantes.update({ id: $scope.estudiante.ID }, $scope.estudiante, function (data) {
             console.log(data);
             $location.path("/");
         });
